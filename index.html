@@ -12,8 +12,15 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      loadSidebar: true,  // 定制侧边栏
-      subMaxLevel: 2,     // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
+      homepage: 'README.md',        // 入口文件改为 /home.md，默认 README.md
+      repo: 'https://github.com/yilua/docs/', // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
+      loadSidebar: true,            // 定制侧边栏
+      subMaxLevel: 2,               // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
+      coverpage: true,              // 可以开启渲染封面的功能
+      coverpage: '_coverpage.md',   // 自定义封面图
+      logo: 'img/the_platform.svg', // 在侧边栏中出现的网站图标，你可以使用CSS来更改大小
+      name: 'docs',                 // 文档标题，会显示在侧边栏顶部。
+
     }
   </script>
   <!-- Docsify v4 -->

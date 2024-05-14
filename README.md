@@ -1,4 +1,5 @@
-## 使用说明 :id=index
+<span id="index"></span>
+## 使用说明
 - 全局安装：docsify-cli 工具，可以方便地创建及在本地预览生成的文档。
 ```bash
 npm i docsify-cli -g

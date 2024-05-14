@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-<img src="img/logo.png" style="width:100px; height: 100px; border-radius: 50%; box-shadow: 1px 1px 10px #00000014;">
+<img src="img/wiki.svg" style="width:100px; height: 100px; border-radius: 50%; box-shadow: 1px 1px 10px #00000014;">
 
 # docs <small>0.0.1</small>
 

@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* 入门
+* 入门&nbsp;:100:
 
   * [快速开始](zh-cn/quickstart.md)
   * [多页文档](zh-cn/more-pages.md)

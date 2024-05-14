@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.min.css">
 </head>
 <body>
-  <div id="app">加载中......</div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
       name: 'docs',                 // 文档标题，会显示在侧边栏顶部。
@@ -31,20 +31,24 @@
       subMaxLevel: 2,               // 自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
       coverpage: true,              // 可以开启渲染封面的功能
       coverpage: '_coverpage.md',   // 自定义封面图
-      // logo: 'img/the_platform.svg', // 在侧边栏中出现的网站图标，你可以使用CSS来更改大小
+      logo: 'img/logo.png',         // 在侧边栏中出现的网站图标，你可以使用CSS来更改大小
       loadNavbar: true,             // 自定义导航栏，默认文件_navbar.md
-      search: {
-          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-          paths: 'auto',    // [] or 'auto'
-          placeholder: '搜索',
-          noData: '找不到结果',
-          // 搜索标题的最大层级, 1 - 6
-          depth: 4,
+      search: {                     // 搜索配置
+          maxAge: 86400000,               // 过期时间，单位毫秒，默认一天
+          paths: 'auto',                  // [] or 'auto'
+          placeholder: '搜索',            // 搜索占位符
+          noData: '找不到结果',            // 搜索结果空提示
+          depth: 4,                       // 搜索标题的最大层级, 1 - 6
           hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
-          // 避免搜索索引冲突
-          // 同一域下的多个网站之间
-          namespace: 'docs',
-        }
+          namespace: 'docs',              // 避免搜索索引冲突，同一域下的多个网站之间
+      },
+      count: {                            // 字数统计
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        isExpected: true,                 // 是否显示阅读时长
+      }
     }
   </script>
   <!-- docsify的js依赖 -->
@@ -53,5 +57,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <!-- 搜索功能支持 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- 字数统计 -->
+  <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
 </html>

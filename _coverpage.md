@@ -11,4 +11,4 @@
 - 众多主题
 
 [GitHub](https://github.com/yilua/docs/)
-[Get Started](/)
+[Get Started](#index)

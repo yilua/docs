@@ -31,14 +31,11 @@ Settings->Pages->Source(GitHub Actions)->Static HTML(Configure)->右上角绿色
 ├─img
 │      wiki.svg    logo
 │
-└─note             测试笔记
-        note-01.md
-        note-02.md
-        note-03.md
+└─note             学习笔记
 ```
 
 ## [谷歌分析用户行为](https://analytics.google.com/analytics/web)
-将一下代码紧跟在`<head>`标签后
+将以下代码块追加到`<head>`标签后
 ```js
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5RESVR81N"></script>
